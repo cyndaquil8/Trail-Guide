@@ -82,12 +82,13 @@ class Forest {
   }
 
   void eventStranger() {
-    Printer.printMessage("Ahead of you, you see " + activeStranger.name);
+    Printer.printMessage("Ahead of you, you see " + activeStranger.desc);
     Printer.printMessage("\n (1) Approach the stranger \n (2) Avoid the stranger");
     intin = scan.nextInt();
     switch (intin) {
       case 1:
         Printer.printMessage("NOCODEYETLMAO");
+        break;
       case 2:
         Printer.printMessage("You give the stranger a wide berth. Best to keep to yourself today.");
         if (time != 2) {
@@ -95,6 +96,7 @@ class Forest {
         } else {
           event = 0;
         }
+        break;
     }
   }
 
@@ -118,14 +120,15 @@ class Forest {
   }
 
   Stranger newStranger() {
-    Stranger c;
-    c = new Stranger("Andi the Ranger"); //temporary stranger
-    //by parsing the numid, pick a new stranger from a list that matches with the current:
-      //weather
-      //depth
-      //other stuff?
-    //set activeStranger to the chosen stranger
-    //mark the chosen stranger as (met = true) in the list
+    boolean k = false;
+    //create an empty stranger to be filled
+    Stranger c = new Stranger();
+    while (k == false) {
+      c = Translator.strangerdata.get(r.nextInt(Translator.strangerdata.size()));
+      if (c.depth == v.depth && c.weather == weather) {
+        k = true;
+      }
+    }
     return c;
   }
 
