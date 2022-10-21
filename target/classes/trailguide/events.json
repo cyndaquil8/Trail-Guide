@@ -1,0 +1,47 @@
+[
+    {
+        "id": "Sable",
+        "type": "child",
+        "weather": "default",
+        "trust": 1,
+        "severity": 1,
+        "choices": [
+            "Take the gift.",
+            "Refuse the gift."
+        ]
+    },
+    {
+        "id": "Serana",
+        "type": "humanesque",
+        "weather": "fog",
+        "trust": -1,
+        "severity": 1,
+        "choices": [
+            "Offer your blood.",
+            "Offer something else.",
+            "Ignore."
+        ]
+    },
+    {
+        "id": "Adelaide",
+        "type": "humanesque",
+        "weather": "rain",
+        "trust": -1,
+        "severity": 1,
+        "choices": [
+            "Make the deal.",
+            "Refuse the deal."
+        ]
+    },
+    {
+        "id": "The Woodsman",
+        "type": "humanesque",
+        "weather": "default",
+        "trust": -1,
+        "severity": 3,
+        "choices": [
+            "Light the lantern with your own match.",
+            "Light the lantern with his match."
+        ]
+    }
+]

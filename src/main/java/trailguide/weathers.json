@@ -1,0 +1,21 @@
+[
+    {
+        "id": "default",
+        "npcs": [
+            "Sable",
+            "The Woodsman"
+        ]
+    },
+    {
+        "id": "fog",
+        "npcs": [
+            "Serana"
+        ]
+    },
+    {
+        "id": "rain",
+        "npcs": [
+            "Adelaide"
+        ]
+    }
+]
